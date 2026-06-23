@@ -1,4 +1,21 @@
--- Create Tables
+/*
+Project: Amazon Sales Data Analysis
+Database: PostgreSQL
+Dataset: Amazon Sale Report
+Author: Prachi Patil
+
+Concepts Used:
+- Aggregations
+- Subqueries
+- CTEs
+- Window Functions
+- RANK()
+- DENSE_RANK()
+- LAG()
+*/
+
+
+-- Create Table
 CREATE TABLE amazon_saless (
     index INT,
     order_id VARCHAR(50),
@@ -25,7 +42,6 @@ CREATE TABLE amazon_saless (
     fulfilled_by VARCHAR(50),
 	extra_column TEXT
 );
-drop table amazon_sales;
 -- Import Data into Books Table
 COPY amazon_saless(
     index,
